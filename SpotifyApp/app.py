@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, request, redirect
 
 def create_app():
     app = Flask(__name__)
@@ -9,5 +9,6 @@ def create_app():
     
     @app.route("/")
     def hello_world():
-        return "Hello World"
+        return render_template("home.html")
+    
     return app
