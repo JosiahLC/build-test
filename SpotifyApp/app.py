@@ -5,6 +5,6 @@ def create_app():
     
     @app.route("/",  methods=["GET"])
     def home():
-        return render_template("home.html")
+        return "Hello World"
     
     return app
