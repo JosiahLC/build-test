@@ -1,1 +1,1 @@
-web: gunicorn SpotifyApp:app -t 120 --preload -b 0.0.0.0:5000 
+web: gunicorn SpotifyApp:app --preload -b 0.0.0.0:5000 
